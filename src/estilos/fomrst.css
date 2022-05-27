@@ -1,0 +1,30 @@
+body{
+    background: #000000;
+}
+#botonModal{
+background: #000000;
+color: rgb(206, 220, 223);
+height: 50px;
+font-weight: 500;
+font-size: medium;
+}
+
+.boton_backs{
+    height: 40px;
+    width: 100%;
+    background: #000000;
+    text-decoration: none;
+    color: rgb(206, 220, 223);
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.boton_backs:hover{
+    background: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+}
+
+

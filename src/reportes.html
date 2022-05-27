@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js""></script>
+        <link rel="stylesheet" href="estilos/fomrst.css">
+        <link rel="stylesheet" href="estilos/modals.css">
+        
+        
+    <title>Reportes</title>
+</head>
+
+<body>
+    
+
+    <div class="row">
+         
+        <a href="/src/index.html" class="boton_backs">Regresar al inicio</a>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Nuevo Reporte</h4>
+                      <br>
+                    <form >
+                      
+                      <div class="row">
+                      
+                        <div class="form-group col-md-6">
+                            <label for="">Nombre del nuevo caso</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="Nuevo caso a resolver "
+                                aria-describedby="helpId">
+                            <small id="helpId" class="text-muted"></small>
+                        </div><br>
+
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputEmail1">Fecha</label>
+                            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter email"><br>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1">Quien realizo el reporte</label>
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                    <option>Jaziel</option>
+                                    <option>Luis</option>
+                                    <option>Ariadne</option>
+                                    <option>Berenice</option>
+                                </select>
+                            </div><br>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1">Area de quien hizo el reporte</label>
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                    <option>Contabilidad</option>
+                                    <option>Front-end</option>
+                                    <option>Diseño Digital</option>
+                                    <option>Back-end</option>
+                                </select>
+                            </div><br>
+                        </div>
+                    </div>
+
+                        <div class="form-group">
+                            <label for="comment">Descripción del Reporte:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                          </div><br>
+                          
+                          <div class="row">
+                              
+                          
+                          <div class="form-group col-md-6">
+                            <label for="sel1">Area del evento:</label>
+                            <select class="form-control" id="sel1">
+                              <option>Cocina</option>
+                              <option>Redes</option>
+                              <option>Contabilidad</option>
+                              <option>Ventas</option>
+                            </select>
+                          </div><br>
+                                
+                          <div class="form-group col-md-6">
+                            <label for="sel1">Sub-area del evento:</label>
+                            <select class="form-control" id="sel1">
+                              <option>Electronica</option>
+                              <option>servidores</option>
+                              <option>Computadoras</option>
+                              <option>compiadora</option>
+                            </select>
+                          </div><br>
+                        </div><br>
+                     
+                     <div class="row">
+                         
+                     
+                     
+                          <div class="form-group col-md-6">
+                            <label for="sel1">Clasificacion</label>
+                            <select class="form-control" id="sel1">
+                              <option>Clsifiacion 1</option>
+                              <option>Clsifiacion 2</option>
+                              <option>Clsifiacion 3</option>
+                              <option>Clsifiacion 4</option>
+                            </select>
+                          </div><br>
+
+                          <div class="form-group col-md-6">
+                            <label for="sel1">Subclasificacion:</label>
+                            <select class="form-control" id="sel1">
+                              <option>Subclasificacion 1</option>
+                              <option>Subclasificacion 2</option>
+                              <option>Subclasificacion 3</option>
+                              <option>Subclasificacion 4</option>
+                            </select>
+                          </div><br>
+                        </div><br>
+                    
+
+                          <div class="form-group">
+                            <label for="comment">Plan de accion:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                          </div><br>
+                          
+                          <div class="row">
+                          
+
+                          <div class="form-group col-md-6">
+                            <label for="sel1">Responable de seguimiento:</label>
+                            <select class="form-control" id="sel1">
+                              <option>Jaziel</option>
+                              <option>Roberto</option>
+                              <option>Luis</option>
+                              <option>Subclasificacion 4</option>
+                            </select>
+                          </div><br>
+
+                          <div class="form-group col-md-6">
+                            <label for="sel1">Fecha Compromiso</label>
+                            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter email"><br>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        
+                    
+
+                        <div class="form-group col-md-6">
+                            <label for="sel1" class="text-center">Responable del cierre:</label>
+                            <select class="form-control" id="sel1">
+                              <option>Jaziel</option>
+                              <option>Roberto</option>
+                              <option>Luis</option>
+                              <option>Subclasificacion 4</option>
+                            </select>
+                          </div><br>
+                         <div class="form-group col-md-6 text-center">
+                            <label for="sel1">Estatus del Reporte</label><br><br>
+                            <label class="radio-inline"><input type="radio" name="optradio"> Abierto</label>
+                            <label class="radio-inline"><input type="radio" name="optradio"> En Progeso</label>
+                            <label class="radio-inline"><input type="radio" name="optradio"> Cerrado</label>
+                         </div> <br>
+                        </div><br>
+                         <div class="form-group">
+                            <label for="comment">Comentarios:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                          </div><br>
+
+
+<div class="row">
+    
+
+
+<!-- !Modal experimet -->
+
+
+<div class="form-group col-md-6">
+    <!-- Trigger the modal with a button -->
+    <button type="button" id="botonModal" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Actulizar Reporte</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Actualizacion del Reporte</h4>
+          </div>
+          <div class="modal-body">
+              <!-- ?Formulario dentro del modal -->
+   
+   <div class="row">
+       
+   
+            <div class="form-group col-md-6">
+                            <label for="sel1"> Nueva Fecha Compromiso</label>
+                            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter email"><br>
+            </div>
+            <div class="form-group col-md-6 text-center">
+                <label for="sel1">Estatus del Nuevo Reporte:</label><br><br>
+                <label class="radio-inline"><input type="radio" name="optradio"> Abierto</label>
+                <label class="radio-inline"><input type="radio" name="optradio"> En progreso</label>
+                <label class="radio-inline"><input type="radio" name="optradio"> Cerrado</label>
+             </div> <br>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comentarios:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div><br>
+            <!-- ?Formulario dentro del modal -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- !Modal experimet -->
+                        <div class="form-group col-md-6">
+                          <button type="submit" id="botonModal" class="btn btn-primary" data-dismiss="modal">Generar Nuevo Reporte</button>
+                        </div>
+
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <!-- !Conetido de la tabal  -->
+                    <table class="table table-responsive table-striped">
+                        <thead>
+                            <tr>
+                                <th>Reporte</th>
+                                <th>Fecha del reporte</th>
+                                <th>informacion del reporte</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>El internet es muy lento</td>
+                                <td>20/01/2022</td>
+                                <td>
+                                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" id="botonModal" data-target="#exampleModalScrollable">
+    Reporte info.
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Informacion del Reporte</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                  
+        <div class="row">
+                      
+                  <div class="form-group col-md-6">
+                    <strong> Nombre del nuevo reporte:<br></strong>
+                    El internet es muy lento  
+                  </div>
+                  <div class="form-group col-md-6">
+                    <strong>Fecha del reporte:<br></strong>
+                    20/01/2022  
+                  </div>
+        </div><br>
+        <div class="row">
+                      
+            <div class="form-group col-md-6">
+                <strong>Quien realizo el reporte:<br></strong>
+              Jaziel  
+            </div>
+            <div class="form-group col-md-6">
+                <strong>Area de quien hizo el reporte:<br></strong>
+               Servidores
+            </div>
+         </div>
+         
+         <div class="row">
+            <div class="form-group col-md-12">
+                <strong>Descripción del Reporte:<br></strong>
+               El internet es muy lento durante ciertos lapsos del dia en especifico a las 
+               3:00 pm, 5:00 pm y las 9:00 am gracias a esto los procesos de redes, se detienen
+               generado mas problemas en otras areas
+
+            </div>
+         </div><br>
+         <div class="row">
+                      
+            <div class="form-group col-md-6">
+              <strong>Area del evento:<br></strong>
+               Redes
+            </div>
+            <div class="form-group col-md-6">
+              <strong>Sub-area del evento:<br></strong>
+              Electronica  
+            </div>
+  </div><br>
+  <div class="row">
+                
+      <div class="form-group col-md-6">
+          <strong>Clasificacion:<br></strong>
+        clasificacion 1
+      </div>
+      <div class="form-group col-md-6">
+          <strong>Subclasificacion:<br></strong>
+         Subclasificacion 2
+      </div>
+   </div><br>
+   
+   <div class="row">
+      <div class="form-group col-md-12">
+          <strong>Plan de accion:<br></strong>
+          Se realizaran diferentes pruebas de con los serivodres, para poder comprobar que la conecrividad 
+          no sea por culpa de alguna dependencia interna, si no exeterna, descartando que el problema sea 
+          general o especifico de un area 
+      </div>
+   </div><br>
+   <div class="row">
+                      
+    <div class="form-group col-md-6">
+      <strong>Responable de seguimiento:<br></strong>
+       Jaziel
+    </div>
+    <div class="form-group col-md-6">
+      <strong>Fecha Compromiso:<br></strong>
+      23/08/2022
+    </div>
+</div><br>
+<div class="row">
+        
+<div class="form-group col-md-6">
+  <strong>Responable del cierre:<br></strong>
+  Jaziel
+</div>
+<div class="form-group col-md-6">
+  <strong>Estatus del Reporte<br></strong>
+ En progreso 
+</div>
+</div><br>
+
+<div class="row">
+<div class="form-group col-md-12">
+  <strong>Comentarios:<br></strong>
+  Acutualemte se secubrio que la emprsa contaba con una conexion mal echa en erea de diseño en la cual pasan las 
+  conexiones para redes, esto cuasa un mal flujo de internet, se esta trabajadno en implementar un diseño tipo estrella
+  en la empresa 
+</div>
+</div>
+ 
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+
+                    <!-- ?Conetido de la tabal -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="Modals.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+
+</html>
