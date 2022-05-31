@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/assets/user.png" type="image">
+    <link rel="stylesheet" href="/src/main-page/">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist//css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/jquery/dist/jquery.min.js">
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/src/js/bootstrap.min.js""></script>
+    <link rel="stylesheet" href="/src/users/user.css">
+    <title>Usuarios</title>
+</head>
+<body>
+     <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars text-light"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0">
+          
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="/src/main-page/index.html">
+              <div>
+                <i class="far fa-envelope fa-lg mb-1"></i>
+                <span class="badge rounded-pill badge-notification " > </span>
+              </div>
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="/src/reportes_page/indexrep.html">
+              <div>
+                <i class="far fa-envelope fa-lg mb-1"></i>
+                <span class="badge rounded-pill badge-notification bg-danger">3</span>
+              </div>
+              Reportes
+            </a>
+          </li>
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="/src/users/users.html\">
+              <div>
+                <i class="fas fa-globe-americas fa-lg mb-1"></i>
+                <span class="badge rounded-pill badge-notification bg-success">6</span>
+              </div>
+              Usuarios 
+            </a>
+          </li>
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="/src/login/login.html">
+              <div>
+                <i class="fas fa-bell fa-lg mb-1"></i>
+                <span class="badge rounded-pill badge-notification "> </span>
+              </div>
+              Cerrar sesion
+            </a>
+          </li>
+
+          <li class="nav-item dropdown text-center mx-2 mx-lg-1">
+            
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Left links -->
+  
+        <!-- Right links -->
+        
+        <!-- Right links -->
+  
+        <!-- Search form -->
+        <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
+          <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-primary" type="button" data-mdb-ripple-color="dark">
+            Search
+          </button>
+        </form>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <br>
+  
+  <div class="row">
+    <div class="col-md-5">
+    <div class="card text-md-center">
+      <img class="card-img-top" src="holder.js/100px180/" alt="">
+      <div class="card-body">
+        <h4 class="card-title">Agregar:</h4>
+        <a name="" id="botones_use" class="btn btn-primary" href="#" role="button">Nuevo Usuario</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+  <div class="row">
+    <div class="card text-left">
+      <img class="card-img-top" src="holder.js/100px180/" alt="">
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Correo</th>
+              <th scope="col">Tipo de Usario</th>
+              <th scope="col">Edad</th>
+              <th scope="col">Ultima Sesion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Marcos Peralta</td>
+              <td>marc@outlook.com</td>
+              <td>Administrador</td>
+              <td>34</td>
+              <td>20/12/2022</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Marcos Peralta</td>
+              <td>marc@outlook.com</td>
+              <td>Administrador</td>
+              <td>34</td>
+              <td>20/12/2022</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Marcos Peralta</td>
+              <td>marc@outlook.com</td>
+              <td>Administrador</td>
+              <td>34</td>
+              <td>20/12/2022</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Marcos Peralta</td>
+              <td>marc@outlook.com</td>
+              <td>Administrador</td>
+              <td>34</td>
+              <td>20/12/2022</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Marcos Peralta</td>
+              <td>marc@outlook.com</td>
+              <td>Administrador</td>
+              <td>34</td>
+              <td>20/12/2022</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Marcos Peralta</td>
+              <td>marc@outlook.com</td>
+              <td>Administrador</td>
+              <td>34</td>
+              <td>20/12/2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+  
+  <div class=" col-md-2 text-center">
+    <img class="card-img-top" src="" alt="">
+    <div class="card-body">
+      <a name="" id="botones_use" class="btn btn-primary" href="/src/reportes.html" role="button">Nuevo Reporte</a>
+    </div>
+  </div>
+
+  <div class=" col-md-2 text-center">
+    <img class="card-img-top" src="holder.js/100px180/" alt="">
+    <div class="card-body">
+      <!-- !Modal experimet -->
+                        <!-- Button trigger modal -->
+                        
+                  <div class="form-group col-md-6">                      
+
+                          <!-- Modal -->
+                          <button type="button" class="btn btn-primary"  id="botones_use" data-toggle="modal" data-target=".bd-example-modal-lg">Reportes</button>
+                          
+                          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                          
+                                <table class="table ">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">No</th>
+                                      <th scope="col">Reporte</th>
+                                      <th scope="col">Fecha</th>
+                                      <th scope="col">Info del Reporte</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>el microondas no sirve</td>
+                                      <td>05/21/2022</td>
+                                      <td><!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" id="botonModal" data-target="#exampleModalScrollable">
+                                            Reporte info.
+                                          </button>
+                                          
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalScrollableTitle">Informacion del Reporte</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                          
+                                                <div class="row">
+                                                              
+                                                          <div class="form-group col-md-6">
+                                                            <strong> Nombre del nuevo reporte:<br></strong>
+                                                            El internet es muy lento  
+                                                          </div>
+                                                          <div class="form-group col-md-6">
+                                                            <strong>Fecha del reporte:<br></strong>
+                                                            20/01/2022  
+                                                          </div>
+                                                </div><br>
+                                                <div class="row">
+                                                              
+                                                    <div class="form-group col-md-6">
+                                                        <strong>Quien realizo el reporte:<br></strong>
+                                                      Jaziel  
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <strong>Area de quien hizo el reporte:<br></strong>
+                                                       Servidores
+                                                    </div>
+                                                 </div>
+                                                 
+                                                 <div class="row">
+                                                    <div class="form-group col-md-12">
+                                                        <strong>Descripción del Reporte:<br></strong>
+                                                       El internet es muy lento durante ciertos lapsos del dia en especifico a las 
+                                                       3:00 pm, 5:00 pm y las 9:00 am gracias a esto los procesos de redes, se detienen
+                                                       generado mas problemas en otras areas
+                                        
+                                                    </div>
+                                                 </div><br>
+                                                 <div class="row">
+                                                              
+                                                    <div class="form-group col-md-6">
+                                                      <strong>Area del evento:<br></strong>
+                                                       Redes
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                      <strong>Sub-area del evento:<br></strong>
+                                                      Electronica  
+                                                    </div>
+                                          </div><br>
+                                          <div class="row">
+                                                        
+                                              <div class="form-group col-md-6">
+                                                  <strong>Clasificacion:<br></strong>
+                                                clasificacion 1
+                                              </div>
+                                              <div class="form-group col-md-6">
+                                                  <strong>Subclasificacion:<br></strong>
+                                                 Subclasificacion 2
+                                              </div>
+                                           </div><br>
+                                           
+                                           <div class="row">
+                                              <div class="form-group col-md-12">
+                                                  <strong>Plan de accion:<br></strong>
+                                                  Se realizaran diferentes pruebas de con los serivodres, para poder comprobar que la conecrividad 
+                                                  no sea por culpa de alguna dependencia interna, si no exeterna, descartando que el problema sea 
+                                                  general o especifico de un area 
+                                              </div>
+                                           </div><br>
+                                           <div class="row">
+                                                              
+                                            <div class="form-group col-md-6">
+                                              <strong>Responable de seguimiento:<br></strong>
+                                               Jaziel
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                              <strong>Fecha Compromiso:<br></strong>
+                                              23/08/2022
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                                
+                                        <div class="form-group col-md-6">
+                                          <strong>Responable del cierre:<br></strong>
+                                          Jaziel
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <strong>Estatus del Reporte<br></strong>
+                                         En progreso 
+                                        </div>
+                                        </div><br>
+                                        
+                                        <div class="row">
+                                        <div class="form-group col-md-12">
+                                          <strong>Comentarios:<br></strong>
+                                          Acutualemte se secubrio que la emprsa contaba con una conexion mal echa en erea de diseño en la cual pasan las 
+                                          conexiones para redes, esto cuasa un mal flujo de internet, se esta trabajadno en implementar un diseño tipo estrella
+                                          en la empresa 
+                                        </div>
+                                        </div>
+                                         
+                                        
+                                        
+                                        
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Los Conectores no sirven</td>
+                                      <td>03/02/2022</td>
+                                      <td>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" id="botonModal" data-target="#exampleModalScrollable">
+                                            Reporte info.
+                                          </button>
+                                          
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalScrollableTitle">Informacion del Reporte</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                          
+                                                <div class="row">
+                                                              
+                                                          <div class="form-group col-md-6">
+                                                            <strong> Nombre del nuevo reporte:<br></strong>
+                                                            El internet es muy lento  
+                                                          </div>
+                                                          <div class="form-group col-md-6">
+                                                            <strong>Fecha del reporte:<br></strong>
+                                                            20/01/2022  
+                                                          </div>
+                                                </div><br>
+                                                <div class="row">
+                                                              
+                                                    <div class="form-group col-md-6">
+                                                        <strong>Quien realizo el reporte:<br></strong>
+                                                      Jaziel  
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <strong>Area de quien hizo el reporte:<br></strong>
+                                                       Servidores
+                                                    </div>
+                                                 </div>
+                                                 
+                                                 <div class="row">
+                                                    <div class="form-group col-md-12">
+                                                        <strong>Descripción del Reporte:<br></strong>
+                                                       El internet es muy lento durante ciertos lapsos del dia en especifico a las 
+                                                       3:00 pm, 5:00 pm y las 9:00 am gracias a esto los procesos de redes, se detienen
+                                                       generado mas problemas en otras areas
+                                        
+                                                    </div>
+                                                 </div><br>
+                                                 <div class="row">
+                                                              
+                                                    <div class="form-group col-md-6">
+                                                      <strong>Area del evento:<br></strong>
+                                                       Redes
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                      <strong>Sub-area del evento:<br></strong>
+                                                      Electronica  
+                                                    </div>
+                                          </div><br>
+                                          <div class="row">
+                                                        
+                                              <div class="form-group col-md-6">
+                                                  <strong>Clasificacion:<br></strong>
+                                                clasificacion 1
+                                              </div>
+                                              <div class="form-group col-md-6">
+                                                  <strong>Subclasificacion:<br></strong>
+                                                 Subclasificacion 2
+                                              </div>
+                                           </div><br>
+                                           
+                                           <div class="row">
+                                              <div class="form-group col-md-12">
+                                                  <strong>Plan de accion:<br></strong>
+                                                  Se realizaran diferentes pruebas de con los serivodres, para poder comprobar que la conecrividad 
+                                                  no sea por culpa de alguna dependencia interna, si no exeterna, descartando que el problema sea 
+                                                  general o especifico de un area 
+                                              </div>
+                                           </div><br>
+                                           <div class="row">
+                                                              
+                                            <div class="form-group col-md-6">
+                                              <strong>Responable de seguimiento:<br></strong>
+                                               Jaziel
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                              <strong>Fecha Compromiso:<br></strong>
+                                              23/08/2022
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                                
+                                        <div class="form-group col-md-6">
+                                          <strong>Responable del cierre:<br></strong>
+                                          Jaziel
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <strong>Estatus del Reporte<br></strong>
+                                         En progreso 
+                                        </div>
+                                        </div><br>
+                                        
+                                        <div class="row">
+                                        <div class="form-group col-md-12">
+                                          <strong>Comentarios:<br></strong>
+                                          Acutualemte se secubrio que la emprsa contaba con una conexion mal echa en erea de diseño en la cual pasan las 
+                                          conexiones para redes, esto cuasa un mal flujo de internet, se esta trabajadno en implementar un diseño tipo estrella
+                                          en la empresa 
+                                        </div>
+                                        </div>
+                                         
+                                        
+                                        
+                                        
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>El internet es lento</td>
+                                      <td>08/23/2022</td>
+                                      <td>
+                                        <!--? modal dentro de modal -->
+                                        <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" id="botonModal" data-target="#exampleModalScrollable">
+                            Reporte info.
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalScrollableTitle">Informacion del Reporte</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                          
+                                <div class="row">
+                                              
+                                          <div class="form-group col-md-6">
+                                            <strong> Nombre del nuevo reporte:<br></strong>
+                                            El internet es muy lento  
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                            <strong>Fecha del reporte:<br></strong>
+                                            20/01/2022  
+                                          </div>
+                                </div><br>
+                                <div class="row">
+                                              
+                                    <div class="form-group col-md-6">
+                                        <strong>Quien realizo el reporte:<br></strong>
+                                      Jaziel  
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <strong>Area de quien hizo el reporte:<br></strong>
+                                       Servidores
+                                    </div>
+                                 </div>
+                                 
+                                 <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <strong>Descripción del Reporte:<br></strong>
+                                       El internet es muy lento durante ciertos lapsos del dia en especifico a las 
+                                       3:00 pm, 5:00 pm y las 9:00 am gracias a esto los procesos de redes, se detienen
+                                       generado mas problemas en otras areas
+                          
+                                    </div>
+                                 </div><br>
+                                 <div class="row">
+                                              
+                                    <div class="form-group col-md-6">
+                                      <strong>Area del evento:<br></strong>
+                                       Redes
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                      <strong>Sub-area del evento:<br></strong>
+                                      Electronica  
+                                    </div>
+                          </div><br>
+                          <div class="row">
+                                        
+                              <div class="form-group col-md-6">
+                                  <strong>Clasificacion:<br></strong>
+                                clasificacion 1
+                              </div>
+                              <div class="form-group col-md-6">
+                                  <strong>Subclasificacion:<br></strong>
+                                 Subclasificacion 2
+                              </div>
+                           </div><br>
+                           
+                           <div class="row">
+                              <div class="form-group col-md-12">
+                                  <strong>Plan de accion:<br></strong>
+                                  Se realizaran diferentes pruebas de con los serivodres, para poder comprobar que la conecrividad 
+                                  no sea por culpa de alguna dependencia interna, si no exeterna, descartando que el problema sea 
+                                  general o especifico de un area 
+                              </div>
+                           </div><br>
+                           <div class="row">
+                                              
+                            <div class="form-group col-md-6">
+                              <strong>Responable de seguimiento:<br></strong>
+                               Jaziel
+                            </div>
+                            <div class="form-group col-md-6">
+                              <strong>Fecha Compromiso:<br></strong>
+                              23/08/2022
+                            </div>
+                          </div><br>
+                          <div class="row">
+                                
+                          <div class="form-group col-md-6">
+                          <strong>Responable del cierre:<br></strong>
+                          Jaziel
+                          </div>
+                          <div class="form-group col-md-6">
+                          <strong>Estatus del Reporte<br></strong>
+                          En progreso 
+                          </div>
+                          </div><br>
+                          
+                          <div class="row">
+                          <div class="form-group col-md-12">
+                          <strong>Comentarios:<br></strong>
+                          Acutualemte se secubrio que la emprsa contaba con una conexion mal echa en erea de diseño en la cual pasan las 
+                          conexiones para redes, esto cuasa un mal flujo de internet, se esta trabajadno en implementar un diseño tipo estrella
+                          en la empresa 
+                          </div>
+                          </div>
+                          
+                          
+                          
+                          
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                                        <!--? modal dentro de modal -->
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+  </div>
+</div>
+<script src="/src/Modals.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+</body>
+</html>

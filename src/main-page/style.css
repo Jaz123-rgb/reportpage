@@ -1,0 +1,46 @@
+.btn {
+    padding: .55rem 1.5rem .45rem;
+  }
+  container_users
+#conaint-user{
+  
+    /* IMPORTANTE */
+    text-align: center;
+
+  
+}
+#conaint-boton{
+  margin-top: 10px;
+  margin-left: -90px;
+  text-align: center;
+}
+#card_body{
+  padding: 00px;
+  margin: 0px;
+  
+  /* IMPORTANTE */
+  display: inline-block;
+}
+
+#user_img{
+  margin: 0px;
+  padding: 0px;
+    width: 150px;
+    height: auto;
+    align-items: center;
+  }
+
+
+  #username_con2{
+    margin-top: -30px;
+
+  }
+ /* html .col-md-4{
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right:15px;
+} */
+.sinpadding [class*="col-"] {
+  padding: 0;
+}

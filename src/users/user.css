@@ -1,0 +1,12 @@
+#botones_use{
+    background: black;
+    border-color: brown;
+    height: 3rem;
+    width: 200px;
+
+}
+
+#botones_use:hover{
+    background-color: white;
+    color: black;
+}

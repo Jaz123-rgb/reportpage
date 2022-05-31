@@ -1,12 +1,17 @@
 body{
-    background: #000000;
+    background: #ffffff;
 }
 #botonModal{
 background: #000000;
 color: rgb(206, 220, 223);
 height: 50px;
+width: 200px;
 font-weight: 500;
 font-size: medium;
+}
+#botonModal:hover{
+    background: white;
+    color: #000000;
 }
 
 .boton_backs{

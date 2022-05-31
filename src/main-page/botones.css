@@ -1,0 +1,61 @@
+.container {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.btn2 {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 44px;
+  font-size: 36px;
+  position: relative;
+}
+
+.btn2::before {
+  -webkit-transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn2 .btn-text {
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.btn2:hover::before {
+  background: black;
+  width: 100%;
+}
+
+.btn2.rounded {
+  border-radius: 50px;
+}
+
+.btn2.rounded .text-green {
+  color: #00F0B5;
+  mix-blend-mode: difference;
+}
+
+.btn2.rounded::before {
+  border-radius: 50px;
+  width: 25%;
+  background: #00F0B5;
+}
+
+.btn2.rounded:hover::before {
+  background: #00F0B5;
+  width: 100%;
+}
+/*# sourceMappingURL=botones.css.map */
