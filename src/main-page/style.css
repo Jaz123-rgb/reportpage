@@ -1,17 +1,18 @@
 .btn {
     padding: .55rem 1.5rem .45rem;
   }
-  container_users
+
 #conaint-user{
   
     /* IMPORTANTE */
     text-align: center;
-
+     margin-left: 300px;
+   
   
 }
 #conaint-boton{
-  margin-top: 10px;
-  margin-left: -90px;
+  margin-top: 40px;
+  margin-left: -300px;
   text-align: center;
 }
 #card_body{
@@ -44,3 +45,4 @@
 .sinpadding [class*="col-"] {
   padding: 0;
 }
+

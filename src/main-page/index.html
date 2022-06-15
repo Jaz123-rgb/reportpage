@@ -60,7 +60,7 @@
             </a>
           </li>
           <li class="nav-item text-center mx-2 mx-lg-1">
-            <a class="nav-link" href="/src/login/login.html">
+            <a class="nav-link" href="/login.html">
               <div>
                 <i class="fas fa-bell fa-lg mb-1"></i>
                 <span class="badge rounded-pill badge-notification "> </span>
@@ -91,12 +91,7 @@
         <!-- Right links -->
   
         <!-- Search form -->
-        <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
-          <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-primary" type="button" data-mdb-ripple-color="dark">
-            Search
-          </button>
-        </form>
+        
       </div>
       <!-- Collapsible wrapper -->
     </div>
@@ -104,16 +99,24 @@
   </nav>
   <!-- Navbar -->
     
-    <div class="row" >
-      <div class="card col-md-4" id="conaint-user"> 
+    <div class="row">
+
+      <div class=" col-md-8" id="conaint-boton">
+        <img class="card-img-top" src="" alt="">
+        <div class="card-body " id="card_body">
+            <h4 class="card-title">Generar casos nuevos</h4>
+            <div class="container">
+                <a name=""  class="btn btn-primary" href="/src/reportes.html" role="button">Registrar</a>
+            </div>
+        </div>
+     </div> 
+
+
+
+      <div class="col-md-4 text-end" id="conaint-user"> 
        <!-- ?thisn isnste a card  -->
        
        <div class="row" >
-         
-          <div class="col-md-4" id="username_cont">
-            <img class="card-img-top" id="user_img" src="/src/assets/user.png" alt="">
-          </div>
-          
         <div class="col-md-6 text-center">
           <div id="username_cont">
             <div class="text-start" >
@@ -130,6 +133,14 @@
           </div>
           
         </div>
+         
+
+          <div class="col-md-4" id="username_cont">
+            <img class="card-img-top" id="user_img" src="/src/assets/user.png" alt="">
+          </div>
+          
+        
+
        </div>
  
 
@@ -137,73 +148,134 @@
    
       </div>
 
-      <div class=" col-md-8" id="conaint-boton">
-        <img class="card-img-top" src="" alt="">
-        <div class="card-body " id="card_body">
-            <h4 class="card-title">Generar casos nuevos</h4>
-            <div class="container">
-              <button class="btn2">
-                <a href="/src/reportes.html" style="text-decoration: none;"><span class="btn-text">Iniciar</span></a>
-              </button>
-            </div>
-        </div>
-     </div>  
-    </div><br>
-    
-    
+      <br>
 
+    
+    
     <div class="row">
+      <!-- ? prinpripal card -->
+      <div class="card text-left">
+        <div class="card-body">
+          
+          <div class="row">
 
-        <div class="col-md-6">
-
-            <div class="card" style="width: 700px;">
-                <div class="card-body">
-                    <h5 class="card-title">Flujo de reportes en los utlimos meses</h5>
-                    <canvas id="lineChart"></canvas>
-                    <a href="grafics.js" class="btn btn-primary">Descargar excel</a>
+            <div class="col-md-6">
+    
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">Flujo de reportes en los utlimos meses</h5>
+                        <canvas id="lineChart"></canvas>
+                        <a href="grafics.js" class="btn btn-primary">Descargar excel</a>
+                    </div>
                 </div>
+    
             </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-            <div class="card" style="width: 700px;">
-                <div class="card-body">
-                    <h5 class="card-title">Areas con mas reportes</h5>
-                    <canvas id="radarChart"></canvas>
-                    <a href="#" class="btn btn-primary">Descargar excel</a>
+    
+            <div class="col-md-6">
+    
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">Areas con mas reportes</h5>
+                        <canvas id="radarChart"></canvas>
+                        <a href="#" class="btn btn-primary">Descargar excel</a>
+                    </div>
                 </div>
-            </div>
+            </div> 
+    
         </div>
-        <div class="col-md-6">
-
-            <div class="card" style="width: 700px;">
-                <div class="card-body">
-                    <h5 class="card-title">Casos completados</h5>
-                    <canvas id="horizontalBar"></canvas>
-                    <a href="#" class="btn btn-primary">Descargar excel</a>
-                </div>
-            </div>
-
         </div>
+      </div>
+  
+    <!-- ? prinpripal card -->
+  </div>
 
-        <div class="col-md-6">
-
-            <div class="card" style="width: 700px;">
-                <div class="card-body">
-                    <h5 class="card-title">Casos en proceso</h5>
-                    <canvas id="pieChart"></canvas>
-                    <a href="#" class="btn btn-primary">Descargar excel</a>
-                </div>
-            </div>
-        </div>
-
+  <div class="row">
+    <!-- ? prinpripal card -->
+    <div class="card text-left">
+      <div class="card-body">
         
+        <div class="row">
+  
+  <div class="col-md-6">
+  
+    <div class="card" ">
+        <div class="card-body">
+            <h5 class="card-title">Casos completados</h5>
+            <canvas id="horizontalBar"></canvas>
+            <a href="#" class="btn btn-primary">Descargar excel</a>
+        </div>
     </div>
-    
-    
-    
+  
+  </div>
+  
+  <div class="col-md-6"  >
+  
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Casos en proceso</h5>
+            <canvas id="pieChart"></canvas>
+            <a href="#" class="btn btn-primary">Descargar excel</a>
+        </div>
+    </div>
+  </div>
+  
+         </div>
+        
+
+      </div>
+    </div>
+
+  <!-- ? prinpripal card -->
+</div>
+
+<div class="row">
+  <!-- ? prinpripal card -->
+  <div class="card text-left">
+    <div class="card-body">
+      
+      <div class="row">
+
+<div class="col-md-6">
+
+                 <div class="card" ">
+      <div class="card-body">
+          <h5 class="card-title">Flujo de casos completados</h5>
+          <div id="canvas-holder" style="height:350px">
+            <canvas id="myChart" />
+          </div>
+          <a href="grafics.js" class="btn btn-primary">Descargar excel</a>
+
+  
+      </div>
+  </div>
+
+                </div>
+
+<div class="col-md-6"  >
+
+  <div class="card">
+      <div class="card-body">
+          <h5 class="card-title">Departamento con mas desarrollo de casos</h5>
+          <div style="height:350px">
+            <canvas id="canvas"/>
+        </div>
+        <a href="grafics.js" class="btn btn-primary">Descargar excel</a>
+          
+
+
+      </div>
+  </div>
+</div>
+
+       </div>
+      
+
+    </div>
+  </div>
+
+<!-- ? prinpripal card -->
+</div>
+
 
 
     <!--? links para mis scripts  -->
@@ -213,3 +285,11 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
